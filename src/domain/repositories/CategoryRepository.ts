@@ -4,7 +4,10 @@ export interface CategoryRepository {
   getAll(userId?: string): Promise<Category[]>
   getById(id: string): Promise<Category | null>
   create(
-    category: Omit<Category, 'id' | 'createdAt' | 'updatedAt'>,
+    category: Omit<
+      Category,
+      'id' | 'createdAt' | 'updatedAt' | 'bookmarkCount'
+    >,
     userId?: string
   ): Promise<Category>
   update(id: string, data: Partial<Category>): Promise<Category>
