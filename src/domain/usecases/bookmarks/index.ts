@@ -1,0 +1,5 @@
+export * from './CreateBookmarkUseCase'
+export * from './DeleteBookmarkUseCase'
+export * from './GetBookmarkByIdUseCase'
+export * from './GetBookmarksUseCase'
+export * from './UpdateBookmarkUseCase'

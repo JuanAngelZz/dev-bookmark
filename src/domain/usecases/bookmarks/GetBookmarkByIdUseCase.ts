@@ -1,7 +1,7 @@
 import { Bookmark } from '@domain/entities'
 import { BookmarkRepository } from '@domain/repositories'
 
-export class GetBookmarksUseCase {
+export class GetBookmarkByIdUseCase {
   private readonly bookmarkRepository: BookmarkRepository
 
   constructor(bookmarkRepository: BookmarkRepository) {
